@@ -36,13 +36,13 @@ function App() {
         </div>
       ) : (
         // <div className="loader-bg">Loading....</div>
-        <div class="wrapper">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
-          <div class="shadow"></div>
+        <div class="typing-indicator loader-align">
+          <div class="typing-circle"></div>
+          <div class="typing-circle"></div>
+          <div class="typing-circle"></div>
+          <div class="typing-shadow"></div>
+          <div class="typing-shadow"></div>
+          <div class="typing-shadow"></div>
         </div>
       )}
     </div>
