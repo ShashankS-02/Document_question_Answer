@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Form from "./components/FormComponent";
 import axios from "axios";
+import "./App.css";
 function App() {
   const [userData, setUserData] = useState(null);
   const [isDataFetched, setIsDataFetched] = useState(false);
@@ -24,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <div className="form-container">
+    <div>
       {userData ? (
         <div className="flex h-screen justify-center items-center align-middle bg-zinc-800">
           {/* <h2>User Data</h2>
@@ -34,7 +35,15 @@ function App() {
           <Form className="p-0" data={userData} />
         </div>
       ) : (
-        <div className="loader-bg">Loading....</div>
+        // <div className="loader-bg">Loading....</div>
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
       )}
     </div>
   );
