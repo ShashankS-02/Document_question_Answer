@@ -41,8 +41,21 @@ const FileUpload = () => {
   return (
     <>
       <div className="file-upload-container flex flex-col">
+        <div class="cube-loader">
+          <div class="cube-top"></div>
+          <div class="cube-wrapper">
+            <span className="cube-span" style={{ "--i": 0 }} />
+            <span className="cube-span" style={{ "--i": 1 }} />
+            <span className="cube-span" style={{ "--i": 2 }} />
+            <span className="cube-span" style={{ "--i": 3 }} />
+          </div>
+        </div>
         <div className="title">
-          <h1 className="jersey-10-regular">Information Extraction </h1>
+          <h1 className="jersey-10-regular">Information Extractor </h1>
+          <h3 className="jersey-8-regular">
+            Upload your resume to autofill information in the application form
+            that is derived from your resume using LLM's
+          </h3>
         </div>
         <div className="input-box">
           <input
