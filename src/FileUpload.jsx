@@ -64,13 +64,6 @@ const FileUpload = () => {
             onChange={handleFileUpload}
             className="file-input"
           />
-          {/* <button
-          type="button"
-          onClick={handleRedirect}
-          className="upload-button"
-        >
-          Upload
-        </button> */}
           <button
             type="button"
             onClick={handleRedirect}

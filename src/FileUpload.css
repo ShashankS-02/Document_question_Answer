@@ -79,52 +79,13 @@
     0 0 30px #323232, 0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
 }
 
-/* .file-upload-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  --color: rgba(114, 114, 114, 0.3);
-  background-color: #191a1a;
-  background-image: linear-gradient(
-      0deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    ),
-    linear-gradient(
-      90deg,
-      transparent 24%,
-      var(--color) 25%,
-      var(--color) 26%,
-      transparent 27%,
-      transparent 74%,
-      var(--color) 75%,
-      var(--color) 76%,
-      transparent 77%,
-      transparent
-    );
-  background-size: 55px 55px;
-  height: 100vh;
-  width: 100vw;
-} */
-
 .file-upload-container {
-  /* Basic dimensions and centering */
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Dark mode colors and gradient */
-  background: #121212; /* Fallback for browsers that don't support gradients */
+  background: #121212;
   background: linear-gradient(
     135deg,
     #121212 25%,
@@ -136,8 +97,6 @@
     #1a1a1a
   );
   background-size: 40px 40px;
-
-  /* Animation */
   animation: move 4s linear infinite;
 }
 
